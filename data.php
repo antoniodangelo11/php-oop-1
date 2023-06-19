@@ -5,7 +5,7 @@ $arrGenres = [
     2 => "sci-fi",
     3 => "action",
     4 => "horror",
-    5 => "Comedy",
+    5 => "comedy",
 ];
 
 $movies = [

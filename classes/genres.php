@@ -14,6 +14,6 @@ class Genres
         $this->genre2 = $genre2;
         $this->genre3 = $genre3;
         $this->genre4 = $genre4;
-        $this->genre4 = $genre5;
+        $this->genre5 = $genre5;
     }
 }
