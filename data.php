@@ -1,11 +1,11 @@
 <?php
 
 $arrGenres = [
-    1 => "thriller",
-    2 => "sci-fi",
-    3 => "action",
-    4 => "horror",
-    5 => "comedy",
+    1 => "Thriller",
+    2 => "Sci-Fi",
+    3 => "Action",
+    4 => "Horror",
+    5 => "Comedy",
 ];
 
 $movies = [
