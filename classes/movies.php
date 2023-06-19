@@ -21,6 +21,7 @@ class Movies {
     // Metodo per raggrupare tutte le info
     public function getAllInfo()
     {
-        return $this->title . '<br>' . $this->year . '<br>' . $this->genre . '<br>' . $this->mainActor . '<br>' . $this->production;
+        $genreString = implode(', ', $this->genre);
+        return $this->title . '<br>' . $this->year . '<br>' . $genreString . '<br>' . $this->mainActor . '<br>' . $this->production;
     }
 }

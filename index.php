@@ -14,6 +14,7 @@ include __DIR__ . '/data.php'; ?>
 
 <body>
     <div class="container">
+        <h1>Movies</h1>
         <ul><?php
             foreach ($movies as $movie) { ?>
                 <li><?= $movie->getAllInfo() ?></li><?php
