@@ -8,28 +8,19 @@ class Movies {
     public string $mainActor;
     public string $production;
 
-    // Variabili di classe
-    public static int $counter = 0;
-
     // Costruttore
-    public function __construct(string $title, string $year, array $generi, string $mainActor, string $production) {
+    public function __construct(string $title, string $year, array $genre, string $mainActor, string $production) {
         
         $this->title = $title;
         $this->year = $year;
-        foreach ($generi as $genere) {
-            if (!$genere instanceof Genres) {
-                die('I Generi devono essere di tipo Genres');
-            }
-        };
-        $this->genre = $generi;
-        self::$counter += 1;
-
+        $this->genre = $genre;
         $this->mainActor = $mainActor;
         $this->production = $production;
     }
 
-    // public function getAllInfo()
-    // {
-    //     return $this->title . ' ' . $this->year . ' ' . $this->genre . ' ' . $this->mainActor . ' ' . $this->production;
-    // }
+    // Metodo per raggrupare tutte le info
+    public function getAllInfo()
+    {
+        return $this->title . '<br>' . $this->year . '<br>' . $this->genre . '<br>' . $this->mainActor . '<br>' . $this->production;
+    }
 }

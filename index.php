@@ -16,7 +16,7 @@ include __DIR__ . '/data.php'; ?>
     <div class="container">
         <ul><?php
             foreach ($movies as $movie) { ?>
-                <li><?= $movie->title ?> - <?= $movie->year ?> - <?= $movie->$genre ?> - <?= $movie->mainActor ?> - <?= $movie->production ?></li><?php
+                <li><?= $movie->getAllInfo() ?></li><?php
             } ?>
         </ul>
     </div>
